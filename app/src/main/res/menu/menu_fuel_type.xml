@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/fTypePetrol"
+          android:title="@string/vehicle_fuel_type_petrol"/>
+    <item android:id="@+id/fTypeDiesel"
+          android:title="@string/vehicle_fuel_type_diesel"/>
+    <item android:id="@+id/fTypeCNG"
+          android:title="@string/vehicle_fuel_type_cng"/>
+    <item android:id="@+id/fTypeLPG"
+          android:title="@string/vehicle_fuel_type_lpg"/>
+    <item android:id="@+id/fTypeCNGHybrid"
+          android:title="@string/vehicle_fuel_type_cng_and_hybrid"/>
+    <item android:id="@+id/fTypeElectric"
+            android:title="@string/vehicle_fuel_type_electric"/>
+
+</menu>

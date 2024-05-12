@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/permitTypeAllCountry"
+          android:title="@string/permit_type_all_country_permit"/>
+    <item android:id="@+id/policyTypeAutoPermit"
+          android:title="@string/permit_type_auto_permit"/>
+    <item android:id="@+id/policyTypeContractCarriage"
+          android:title="@string/permit_type_contract_carriage"/>
+    <item android:id="@+id/policyTypeGoodCarriage"
+          android:title="@string/permit_type_good_carriage"/>
+    <item android:id="@+id/policyTypeTemporary"
+          android:title="@string/permit_type_temporary"/>
+    <item android:id="@+id/policyTypeSchoolBus"
+          android:title="@string/permit_type_school_bus"/>
+    <item android:id="@+id/policyTypeTaxi"
+          android:title="@string/permit_type_taxi"/>
+    <item android:id="@+id/policyTypeOther"
+          android:title="@string/permit_type_other"/>
+</menu>

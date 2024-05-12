@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#535DFF</color>
+    <color name="colorPrimaryDark">#535DFF</color>
+    <color name="colorAccent">#535DFF</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="colorTheme">#535DFF</color>
+
+<!--    <color name="colorRed">#FF0000</color>-->
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+
+    <color name="colorGrey">#565656</color>
+    <color name="colorLightGrey">#918d8d</color>
+    <color name="colorVeryLightGrey">#c2c2c2</color>
+    <color name="colorBorder">#d7d7d7</color>
+    <color name="notification_theme">#80DEEA</color>
+
+    <color name="colorFullTransparent">#00000000</color>
+    <color name="colorHalfTransparent">#80000000</color>
+    <color name="colorNavViewTransparent">#b4000000</color>
+
+    <color name="colorBorderVeryLightGrey">#c2c2c2</color>
+
+    <color name="colorLayoutTransparent">#32000000</color>
+    <color name="colorSeparator">#dad5d5</color>
+
+    <color name="colorNextPreEnabled">#261f5e</color>
+    <color name="colorNextPreDisabled">#928faf</color>
+
+    <color name="colorNoInternet">#f6f6f6</color>
+
+    <color name="colorSummaryBack1">#f4f4f4</color>
+    <color name="colorSummaryBack2">#efeffa</color>
+
+    <color name="colorVehicleCatBack">#ecf2f4</color>
+    <color name="colorDrawerBg2">#F8F8F8</color>
+
+
+    <color name="colorRefualList">#535DFF</color>
+
+    <!--all category bg color-->
+    <color name="catRefual">#188af5</color>
+    <color name="catService">#febd01</color>
+    <color name="catExpense">#18cebd</color>
+    <color name="catInsurance">#01c837</color>
+    <color name="catPermit">#fe6f02</color>
+    <color name="catPUC">#745fff</color>
+    <color name="catAccident">#d318f5</color>
+    <color name="catSummary">#fe0166</color>
+
+    <!--all category bg color transparant-->
+    <color name="catRefualtransparant">#10188af5</color>
+    <color name="catServicetransparant">#10febd01</color>
+    <color name="catExpensetransparant">#1018cebd</color>
+    <color name="catInsurancetransparant">#1001c837</color>
+    <color name="catPermittransparant">#10fe6f02</color>
+    <color name="catPUCtransparant">#10745fff</color>
+    <color name="catAccidenttransparant">#10d318f5</color>
+    <color name="catSummarytransparant">#10fe0166</color>
+
+
+    <!--all vehicle bg color-->
+    <color name="bgCar">#e5f8ff</color>
+    <color name="bgBike">#f2f7ff</color>
+    <color name="bgThreeWheel">#fff8e3</color>
+    <color name="bgBus">#f3f3f3</color>
+    <color name="bgTruck">#ffeded</color>
+    <color name="bgTractor">#ecffee</color>
+
+
+    <color name="ShadowbgCar">#017e9b</color>
+    <color name="ShadowbgBike">#000000</color>
+    <color name="ShadowbgThreeWheel">#fcb906</color>
+    <color name="ShadowbgBus">#505050</color>
+    <color name="ShadowbgTruck">#d63849</color>
+    <color name="ShadowbgTractor">#35d344</color>
+
+
+
+
+</resources>

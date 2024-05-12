@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:orientation="horizontal"
+        app:cardElevation="@dimen/three_dp">
+
+    <LinearLayout
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:id="@+id/llMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <!--Col - Month,Date,Year-->
+        <LinearLayout
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/colorTheme"
+                android:layout_weight="1"
+                android:padding="@dimen/three_dp"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:text="@string/permit_issue"
+                    android:gravity="center"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/one_dp"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/three_dp"
+                    android:layout_marginBottom="@dimen/three_dp"
+                    android:layout_marginStart="@dimen/ten_dp"
+                    android:layout_marginEnd="@dimen/ten_dp"
+                    android:background="@color/colorWhite"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvIssueMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvIssueDate"
+                    android:layout_width="match_parent"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/five_dp"
+                    android:textStyle="bold"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvIssueYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"/>
+
+        </LinearLayout>
+
+        <!--Col - Amount-->
+        <LinearLayout
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1.5">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTheme"
+                    android:text="@string/permit_permit_no"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:layout_marginBottom="@dimen/ten_dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:gravity="center"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPermitNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:layout_marginBottom="@dimen/ten_dp"/>
+
+        </LinearLayout>
+
+        <!--Col - Km -->
+        <LinearLayout
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/colorTheme"
+                android:layout_weight="1"
+                android:padding="@dimen/three_dp"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:text="@string/permit_expiry"
+                    android:gravity="center"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/one_dp"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/three_dp"
+                    android:layout_marginBottom="@dimen/three_dp"
+                    android:layout_marginStart="@dimen/ten_dp"
+                    android:layout_marginEnd="@dimen/ten_dp"
+                    android:background="@color/colorWhite"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvExpiryMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvExpiryDate"
+                    android:layout_width="match_parent"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/five_dp"
+                    android:textStyle="bold"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvExpiryYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

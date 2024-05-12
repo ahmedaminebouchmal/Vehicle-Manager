@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/eTypeFine"
+          android:title="@string/expense_type_fine_penalty"/>
+    <item android:id="@+id/eTypeTyre"
+          android:title="@string/expense_type_tyre_changes"/>
+    <item android:id="@+id/eTypeParking"
+          android:title="@string/expense_type_parking"/>
+    <item android:id="@+id/eTypeTolls"
+          android:title="@string/expense_type_tolls"/>
+    <item android:id="@+id/fTypeOther"
+          android:title="@string/expense_type_other"/>
+</menu>

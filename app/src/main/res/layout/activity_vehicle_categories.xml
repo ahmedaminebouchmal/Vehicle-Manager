@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/rlToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/colorWhite"
+            android:elevation="@dimen/dp5"
+            android:gravity="center_vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/five_dp"
+                android:padding="@dimen/ten_dp"
+                android:src="@drawable/baseline_arrow_back_white_24"
+                android:tint="@color/colorGrey" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/imgOptionMenu"
+                android:layout_toEndOf="@+id/imgBack"
+                android:layout_marginStart="@dimen/dp10"
+                android:gravity="start"
+                android:text="@string/title_vehicle_categories"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorGrey"
+                android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgOptionMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/five_dp"
+                android:padding="@dimen/ten_dp"
+                android:src="@drawable/baseline_more_vert_white_24"
+                android:tint="@color/colorGrey" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@+id/llAdView"
+            android:layout_below="@+id/rlToolbar"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:padding="@dimen/five_dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                <com.technoapps.vehiclemanager.custom.SquareLinearLayout
+                        android:id="@+id/llRefuel"
+                        android:layout_width="@dimen/zero_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            ads:cardCornerRadius="@dimen/ten_dp"
+                            ads:cardElevation="0dp"
+                            ads:cardBackgroundColor="@color/catRefualtransparant"
+                            ads:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                            <ImageView
+                                    android:layout_width="@dimen/_50dp"
+                                    android:layout_height="@dimen/_50dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_fule_new"
+                                    ads:tint="@color/catRefual" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/category_refuel"
+                                    android:textSize="@dimen/sp16"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/catRefual" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </com.technoapps.vehiclemanager.custom.SquareLinearLayout>
+
+                <com.technoapps.vehiclemanager.custom.SquareLinearLayout
+                        android:id="@+id/llService"
+                        android:layout_width="@dimen/zero_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            ads:cardCornerRadius="@dimen/ten_dp"
+                            ads:cardBackgroundColor="@color/catServicetransparant"
+                            ads:cardElevation="0dp"
+                            ads:cardUseCompatPadding="true">
+
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                            <ImageView
+                                    android:layout_width="@dimen/_50dp"
+                                    android:layout_height="@dimen/_50dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_service_new"
+                                    ads:tint="@color/catService" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/category_service"
+                                    android:textSize="@dimen/sp16"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/catService" />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </com.technoapps.vehiclemanager.custom.SquareLinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                <com.technoapps.vehiclemanager.custom.SquareLinearLayout
+                        android:id="@+id/llExpense"
+                        android:layout_width="@dimen/zero_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            ads:cardCornerRadius="@dimen/ten_dp"
+                            ads:cardElevation="0dp"
+                            ads:cardBackgroundColor="@color/catExpensetransparant"
+                            ads:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                            <ImageView
+                                    android:layout_width="@dimen/_50dp"
+                                    android:layout_height="@dimen/_50dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_expence_new"
+                                    ads:tint="@color/catExpense" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/category_expense"
+                                    android:textSize="@dimen/sp16"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/catExpense" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </com.technoapps.vehiclemanager.custom.SquareLinearLayout>
+
+                <com.technoapps.vehiclemanager.custom.SquareLinearLayout
+                        android:id="@+id/llInsurance"
+                        android:layout_width="@dimen/zero_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            ads:cardElevation="0dp"
+                            ads:cardCornerRadius="@dimen/ten_dp"
+                            ads:cardBackgroundColor="@color/catInsurancetransparant"
+                            ads:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                            <ImageView
+                                    android:layout_width="@dimen/_50dp"
+                                    android:layout_height="@dimen/_50dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_insurance_new"
+                                    ads:tint="@color/catInsurance" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/category_insurance"
+                                    android:textSize="@dimen/sp16"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/catInsurance" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </com.technoapps.vehiclemanager.custom.SquareLinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                <com.technoapps.vehiclemanager.custom.SquareLinearLayout
+                        android:id="@+id/llPermit"
+                        android:layout_width="@dimen/zero_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            ads:cardCornerRadius="@dimen/ten_dp"
+                            ads:cardElevation="0dp"
+                            ads:cardBackgroundColor="@color/catPermittransparant"
+                            ads:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                            <ImageView
+                                    android:layout_width="@dimen/_50dp"
+                                    android:layout_height="@dimen/_50dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_permit_new"
+                                    ads:tint="@color/catPermit" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/category_permit"
+                                    android:textSize="@dimen/sp16"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/catPermit" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </com.technoapps.vehiclemanager.custom.SquareLinearLayout>
+
+                <com.technoapps.vehiclemanager.custom.SquareLinearLayout
+                        android:id="@+id/llPUC"
+                        android:layout_width="@dimen/zero_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            ads:cardCornerRadius="@dimen/ten_dp"
+                            ads:cardBackgroundColor="@color/catPUCtransparant"
+                            ads:cardElevation="0dp"
+                            ads:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                            <ImageView
+                                    android:layout_width="@dimen/_50dp"
+                                    android:layout_height="@dimen/_50dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="@dimen/dp5"
+                                    android:src="@drawable/ic_puc_new"
+                                    ads:tint="@color/catPUC" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/category_puc"
+                                    android:textSize="@dimen/sp16"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/catPUC" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </com.technoapps.vehiclemanager.custom.SquareLinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                <com.technoapps.vehiclemanager.custom.SquareLinearLayout
+                        android:id="@+id/llAccident"
+                        android:layout_width="@dimen/zero_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            ads:cardElevation="0dp"
+                            ads:cardCornerRadius="@dimen/ten_dp"
+                            ads:cardBackgroundColor="@color/catAccidenttransparant"
+                            ads:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                            <ImageView
+                                    android:layout_width="@dimen/_50dp"
+                                    android:layout_height="@dimen/_50dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_accident_new"
+                                    ads:tint="@color/catAccident" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/category_accident"
+                                    android:textSize="@dimen/sp16"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/catAccident" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </com.technoapps.vehiclemanager.custom.SquareLinearLayout>
+
+                <com.technoapps.vehiclemanager.custom.SquareLinearLayout
+                        android:id="@+id/llSummary"
+                        android:layout_width="@dimen/zero_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            ads:cardElevation="0dp"
+                            ads:cardCornerRadius="@dimen/ten_dp"
+                            ads:cardBackgroundColor="@color/catSummarytransparant"
+                            ads:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                            <ImageView
+                                    android:layout_width="@dimen/_50dp"
+                                    android:layout_height="@dimen/_50dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_summary_new"
+                                    ads:tint="@color/catSummary" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/category_summary"
+                                    android:textSize="@dimen/sp16"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/catSummary" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </com.technoapps.vehiclemanager.custom.SquareLinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+            android:id="@+id/llAdView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="visible" />
+
+    <LinearLayout
+            android:id="@+id/llAdViewFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:orientation="vertical"
+            android:visibility="visible" />
+
+</LinearLayout>

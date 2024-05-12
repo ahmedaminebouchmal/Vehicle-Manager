@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/policyTypeCompleteCover"
+          android:title="@string/insurance_policy_type_complete_cover"/>
+    <item android:id="@+id/policyTypeDamageTheft"
+          android:title="@string/insurance_policy_type_damage_theft"/>
+    <item android:id="@+id/policyTypeThirdParty"
+          android:title="@string/insurance_policy_type_third_party"/>
+    <item android:id="@+id/policyTypeOther"
+          android:title="@string/insurance_policy_type_other"/>
+</menu>

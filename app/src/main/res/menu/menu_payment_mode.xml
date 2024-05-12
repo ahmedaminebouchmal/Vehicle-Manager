@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/paymentModeUPI"
+            android:title="@string/insurance_payment_mode_UPI"/>
+    <item android:id="@+id/paymentModeCreditCard"
+            android:title="@string/insurance_payment_mode_CreditCard"/>
+    <item android:id="@+id/paymentModeDebitCard"
+            android:title="@string/insurance_payment_mode_DebitCard"/>
+    <item android:id="@+id/paymentModeNetBanking"
+            android:title="@string/insurance_payment_mode_NetBanking"/>
+    <item android:id="@+id/paymentModeWallet"
+            android:title="@string/insurance_payment_mode_Wallet"/>
+    <item android:id="@+id/paymentModeCash"
+            android:title="@string/insurance_payment_mode_cash"/>
+    <item android:id="@+id/paymentModeCheque"
+            android:title="@string/insurance_payment_mode_cheque"/>
+</menu>

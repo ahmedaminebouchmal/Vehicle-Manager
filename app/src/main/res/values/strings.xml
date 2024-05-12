@@ -1,0 +1,239 @@
+<resources>
+    <string name="app_name">Vehicle Manager</string>
+
+    <!--Drawer Menu Contents-->
+    <string name="drawer_menu_home">Home</string>
+    <string name="drawer_menu_contact">Send Feedback</string>
+    <string name="drawer_menu_rate">Rate Us</string>
+    <string name="drawer_menu_share">Share with friends</string>
+    <string name="drawer_menu_more">More App</string>
+    <string name="drawer_menu_sing_out">Sign out</string>
+    <string name="drawer_menu_exit">Exit</string>
+
+    <!--Page Title-->
+    <string name="title_vehicle_details">Vehicle Details</string>
+    <string name="title_vehicle_categories">Categories</string>
+
+    <string name="title_vehicle_refuel_list">Refuel List</string>
+    <string name="title_vehicle_refuel_detail">Refuel Detail</string>
+
+    <string name="title_vehicle_service_list">Service List</string>
+    <string name="title_vehicle_service_detail">Service Detail</string>
+
+    <string name="title_vehicle_expense_list">Expense List</string>
+    <string name="title_vehicle_expense_detail">Expense Detail</string>
+
+    <string name="title_vehicle_insurance_list">Insurance List</string>
+    <string name="title_vehicle_insurance_detail">Insurance Detail</string>
+
+    <string name="title_vehicle_permit_list">Permit List</string>
+    <string name="title_vehicle_permit_detail">Permit Detail</string>
+
+    <string name="title_vehicle_puc_list">PUC List</string>
+    <string name="title_vehicle_puc_detail">PUC Detail</string>
+
+    <string name="title_vehicle_accident_list">Accident List</string>
+    <string name="title_vehicle_accident_detail">Accident Detail</string>
+
+    <string name="title_vehicle_summary">Vehicle Summary</string>
+
+
+    <!--Vehicle Categories-->
+    <string name="category_refuel">Refuel</string>
+    <string name="category_service">Service</string>
+    <string name="category_expense">Expense</string>
+    <string name="category_insurance">Insurance</string>
+    <string name="category_permit">Permit</string>
+    <string name="category_puc">PUC</string>
+    <string name="category_accident">Accident</string>
+    <string name="category_summary">Summary</string>
+
+    <!--common hints-->
+    <string name="hint_sign_in">Sign In</string>
+    <string name="hint_retry">Retry</string>
+    <string name="hint_save">Save</string>
+    <string name="hint_clear">Clear</string>
+    <string name="hint_edit">Edit</string>
+    <string name="hint_delete">Delete</string>
+
+    <!--Default Notes on All page-->
+    <string name="default_note_vehicle_detail_1">Sign in with google and manage your detail</string>
+    <string name="default_note_vehicle_detail_2">Tap on (+) button to add vehicle detail</string>
+    <string name="default_note_refuel_detail">Tap on (+) button to add vehicle refuel detail</string>
+    <string name="default_note_service_detail">Tap on (+) button to add vehicle service detail</string>
+    <string name="default_note_expense_detail">Tap on (+) button to add vehicle expense detail</string>
+    <string name="default_note_insurance_detail">Tap on (+) button to add vehicle insurance detail</string>
+    <string name="default_note_permit_detail">Tap on (+) button to add vehicle permit detail</string>
+    <string name="default_note_puc_detail">Tap on (+) button to add vehicle puc detail</string>
+    <string name="default_note_accident_detail">Tap on (+) button to add vehicle accident detail</string>
+
+
+
+    <!--Todo ++++++++++++++++++ Vehicle Detail ++++++++++++++++++-->
+
+    <string name="vehicle_condition">Vehicle Condition</string>
+    <!--Todo ++++++++++++++++++ Vehicle Type ++++++++++++++++++-->
+    <string name="vehicle_condition_old">Old</string>
+    <string name="vehicle_condition_new">New</string>
+    <!--condition-->
+
+    <!--Todo ++++++++++++++++++ Vehicle Title ++++++++++++++++++-->
+    <string name="vehicle_title_hint_bike_car">Bike, Car</string>
+    <string name="vehicle_title_bike">Bike</string>
+    <string name="vehicle_title_car">Car</string>
+    <string name="vehicle_title_three_wheeler">Three Wheeler</string>
+    <string name="vehicle_title_bus">Bus</string>
+    <string name="vehicle_title_truck">Truck</string>
+    <string name="vehicle_title_tractor">Tractor</string>
+    <string name="vehicle_brand">Brand</string>
+    <string name="vehicle_model">Model</string>
+    <string name="vehicle_build_year">Build Year</string>
+    <string name="vehicle_registration_no">Registration No.</string>
+
+    <string name="vehicle_fuel_type">Fuel Type</string>
+    <!--Todo ++++++++++++++++++ Fuel Type ++++++++++++++++++-->
+    <string name="vehicle_fuel_type_petrol">Petrol</string>
+    <string name="vehicle_fuel_type_diesel">Diesel</string>
+    <string name="vehicle_fuel_type_cng">CNG</string>
+    <string name="vehicle_fuel_type_lpg">LPG</string>
+    <string name="vehicle_fuel_type_cng_and_hybrid">CNG &amp; Hybrid</string>
+
+    <string name="vehicle_tank_capacity">Tank Capacity (Ltr.)</string>
+    <string name="vehicle_display_name">Display Name</string>
+    <string name="vehicle_purchase_date">Purchase Date</string>
+    <string name="vehicle_purchase_price">Purchase Price</string>
+    <string name="vehicle_km_reading">Km Reading</string>
+
+    <!--Todo ++++++++++++++++++ Refuel List & Detail++++++++++++++++++-->
+    <string name="refuel_date">Date</string>
+    <string name="refuel_fuel_type">Fuel Type</string>
+    <string name="refuel_amount">Amount</string>
+    <string name="refuel_total_amount">Total Amount</string>
+    <string name="refuel_fuel_price">Fuel Price</string>
+    <string name="refuel_quantity">Quantity</string>
+    <string name="refuel_qty">Qty (Ltr.)</string>
+    <string name="refuel_fuel_station">Fuel Station</string>
+    <string name="refuel_fuel_km_reading">Km Reading</string>
+    <string name="refuel_fuel_km">Km</string>
+
+
+
+    <!--Todo ++++++++++++++++++ Service List & Detail++++++++++++++++++-->
+    <string name="service_date">Date</string>
+    <string name="service_type">Service Type</string>
+    <string name="service_body">Body</string>
+    <string name="service_brakes">Brakes</string>
+    <string name="service_clutch">Clutch</string>
+    <string name="service_colling_system">Colling System</string>
+    <string name="service_engine">Engine</string>
+    <string name="service_spark_plug">Spark Plug</string>
+    <string name="service_general">General</string>
+    <string name="service_other">Other</string>
+    <string name="service_oil_change">Oil Change</string>
+    <string name="service_battery">Battery</string>
+    <string name="service_garage">Garage</string>
+    <string name="service_contact_no">Contact No</string>
+    <string name="service_total_amount">Total Amount</string>
+    <string name="service_km_reading">Km Reading</string>
+    <string name="service_fuel_km">Km</string>
+    <string name="service_description">Description</string>
+
+
+    <!--Todo ++++++++++++++++++ Expense List & Detail++++++++++++++++++-->
+    <string name="expense_date">Date</string>
+    <string name="expense_type">Type</string>
+    <string name="expense_expense_type">Expense Type</string>
+    <string name="expense_amount">Amount</string>
+    <string name="expense_km_reading">Km Reading</string>
+    <string name="expense_description">Description</string>
+
+    <string name="expense_type_fine_penalty">Fine (Penalty)</string>
+    <string name="expense_type_tyre_changes">Tyre Changes</string>
+    <string name="expense_type_parking">Parking</string>
+    <string name="expense_type_tolls">Tolls</string>
+    <string name="expense_type_other">Other</string>
+
+
+    <!--Todo ++++++++++++++++++ Insurance List & Detail++++++++++++++++++-->
+    <string name="insurance_issue">Issue</string>
+    <string name="insurance_expiry">Expiry</string>
+    <string name="insurance_policy_no">Policy No.</string>
+    <string name="insurance_company">Company</string>
+    <string name="insurance_policy_type">Policy Type</string>
+    <string name="insurance_payment_mode">Payment Mode</string>
+    <string name="insurance_insurance_amount">Insurance Amount</string>
+    <string name="insurance_premium">Premium</string>
+    <string name="insurance_agent_name">Agent Name</string>
+    <string name="insurance_agent_contact_no">Agent Contact No</string>
+    <string name="insurance_description">Description</string>
+
+    <string name="insurance_policy_type_complete_cover">Complete Cover</string>
+    <string name="insurance_policy_type_damage_theft">Damage/Theft</string>
+    <string name="insurance_policy_type_third_party">Third Party</string>
+    <string name="insurance_policy_type_other">Other</string>
+
+    <string name="insurance_payment_mode_cash">Cash</string>
+    <string name="insurance_payment_mode_cheque">Cheque</string>
+
+
+    <!--Todo ++++++++++++++++++ Permit List & Detail++++++++++++++++++-->
+    <string name="permit_issue">Issue</string>
+    <string name="permit_permit_no">Permit No</string>
+    <string name="permit_expiry">Expiry</string>
+    <string name="permit_permit_type">Permit Type</string>
+    <string name="permit_cost">Permit Cost</string>
+    <string name="permit_description">Description</string>
+
+    <string name="permit_type_all_country_permit">All Country Permit</string>
+    <string name="permit_type_auto_permit">Auto Permit</string>
+    <string name="permit_type_contract_carriage">Contract Carriage</string>
+    <string name="permit_type_good_carriage">Good Carriage</string>
+    <string name="permit_type_temporary">Temporary</string>
+    <string name="permit_type_school_bus">School Bus</string>
+    <string name="permit_type_taxi">Taxi</string>
+    <string name="permit_type_other">Other</string>
+
+    <!--Todo ++++++++++++++++++ PUC List & Detail++++++++++++++++++-->
+    <string name="puc_issue">Issue</string>
+    <string name="puc_puc_no">PUC No</string>
+    <string name="puc_expiry">Expiry</string>
+    <string name="puc_amount">Amount</string>
+    <string name="puc_description">Description</string>
+
+    <!--Todo ++++++++++++++++++ Accident List & Detail++++++++++++++++++-->
+    <string name="accident_date">Date</string>
+    <string name="accident_time">Time</string>
+    <string name="accident_driver_name">Driver Name</string>
+    <string name="accident_amount">Amount</string>
+    <string name="accident_km">Km</string>
+    <string name="accident_km_reading">Km Reading</string>
+    <string name="accident_description">Description</string>
+
+    <!--Todo ++++++++++++++++++++++ Summary ++++++++++++++++++++++++++-->
+    <string name="summary_include_purchase_price">Include Purchase Price</string>
+    <string name="summary_total_expenditure">Total Expenditure</string>
+    <string name="summary_purchase_price">Purchase Price</string>
+    <string name="summary_refuel">Refuel</string>
+    <string name="summary_service">Service</string>
+    <string name="summary_expense">Expense</string>
+    <string name="summary_insurance">Insurance</string>
+    <string name="summary_permit">Permit</string>
+
+
+    <string name="adapter_vehicle_detail_key">adapter_vehicle_detail_key</string>
+    <string name="vehicle_fuel_type_electric">Electric</string>
+    <string name="exit_confirmation">Are you sure want to exit?</string>
+
+
+    <string name="update">Update</string>
+    <string name="update_msg">An New Version of APP is Available</string>
+    <string name="critical_update_msg">An critical update is required</string>
+    <string name="btn_update">Update</string>
+    <string name="version_1_2">Version 1.3</string>
+    <string name="AD_MOB_APPLICATION_ID" >ca-app-pub-3940256099942544~3347511713</string>
+    <string name="insurance_payment_mode_UPI">UPI</string>
+    <string name="insurance_payment_mode_CreditCard">Credit Card</string>
+    <string name="insurance_payment_mode_DebitCard">Debit Card</string>
+    <string name="insurance_payment_mode_NetBanking">Net Banking</string>
+    <string name="insurance_payment_mode_Wallet">Wallet</string>
+</resources>

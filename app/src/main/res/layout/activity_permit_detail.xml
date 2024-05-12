@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/rlToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/colorWhite"
+            android:elevation="@dimen/dp5"
+            android:gravity="center_vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/five_dp"
+                android:padding="@dimen/ten_dp"
+                android:src="@drawable/baseline_arrow_back_white_24"
+                android:tint="@color/colorGrey"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp10"
+                android:layout_toStartOf="@+id/imgTemp"
+                android:layout_toEndOf="@+id/imgBack"
+                android:layout_marginStart="@dimen/dp10"
+                android:gravity="start"
+                android:text="@string/title_vehicle_permit_detail"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorGrey"
+                android:textStyle="bold"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/five_dp"
+                android:padding="@dimen/ten_dp"
+                android:visibility="invisible"
+                android:src="@drawable/baseline_more_vert_white_24"
+                android:tint="@color/colorGrey"/>
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_below="@+id/rlToolbar"
+            android:layout_above="@+id/llAdView"
+            android:layout_margin="@dimen/five_dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <!--Permit Type-->
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/five_dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:padding="@dimen/five_dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:ems="7"
+                        android:layout_centerVertical="true"
+                        android:text="@string/permit_permit_type"
+                        android:id="@+id/tvPermitType"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorBlack"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:layout_toEndOf="@+id/tvPermitType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/five_dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etPermitType"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:drawableTint="@color/colorPrimary"
+                            android:drawableEnd="@drawable/baseline_arrow_drop_down_black_24"
+                            android:hint="@string/permit_permit_type"
+                            android:textColor="@color/colorBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+            <!--Issue Date-->
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/five_dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:padding="@dimen/five_dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:ems="7"
+                        android:layout_centerVertical="true"
+                        android:text="@string/permit_issue"
+                        android:id="@+id/tvIssueDate"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorBlack"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:layout_toEndOf="@+id/tvIssueDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/five_dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etIssueDate"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:drawableTint="@color/colorPrimary"
+                            android:textColor="@color/colorBlack"
+                            android:layout_width="match_parent"
+                            android:drawableEnd="@drawable/baseline_date_range_black_24"
+                            android:layout_height="wrap_content"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+            <!--Expiry Date-->
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/five_dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:padding="@dimen/five_dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:ems="7"
+                        android:layout_centerVertical="true"
+                        android:text="@string/permit_expiry"
+                        android:id="@+id/tvExpiryDate"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorBlack"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:layout_toEndOf="@+id/tvExpiryDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/five_dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etExpiryDate"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:textColor="@color/colorBlack"
+                            android:drawableTint="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:drawableEnd="@drawable/baseline_date_range_black_24"
+                            android:layout_height="wrap_content"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+            <!--Permit No-->
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/five_dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPermitNo"
+                        android:hint="@string/permit_permit_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:maxLength="15"
+                        android:textColor="@color/colorBlack"
+                        android:inputType="number"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Permit Cost-->
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/five_dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPermitCost"
+                        android:hint="@string/permit_cost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:maxLength="5"
+                        android:textColor="@color/colorBlack"
+                        android:inputType="number"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!--Description-->
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/five_dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etDescription"
+                        android:hint="@string/permit_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="200"
+                        android:textColor="@color/colorBlack"
+                        android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvSave"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corner_back_theme"
+                        android:ems="7"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/ten_dp"
+                        android:padding="@dimen/ten_dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:text="@string/hint_save"
+                        android:textColor="@color/colorWhite"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvClear"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corner_back_theme"
+                        android:ems="7"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/ten_dp"
+                        android:padding="@dimen/ten_dp"
+                        android:text="@string/hint_clear"
+                        android:textColor="@color/colorWhite"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+            android:id="@+id/llAdView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:visibility="visible"/>
+
+    <LinearLayout
+            android:id="@+id/llAdViewFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:visibility="visible"
+            android:orientation="vertical" />
+</LinearLayout>

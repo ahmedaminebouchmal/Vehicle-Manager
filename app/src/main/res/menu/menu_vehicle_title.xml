@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/vTitleBike"
+          android:title="@string/vehicle_title_bike"/>
+    <item android:id="@+id/vTitleCar"
+          android:title="@string/vehicle_title_car"/>
+    <item android:id="@+id/vTitleThreeWheeler"
+          android:title="@string/vehicle_title_three_wheeler"/>
+    <item android:id="@+id/vTitleBus"
+          android:title="@string/vehicle_title_bus"/>
+    <item android:id="@+id/vTitleTruck"
+          android:title="@string/vehicle_title_truck"/>
+    <item android:id="@+id/vTitleTractor"
+          android:title="@string/vehicle_title_tractor"/>
+</menu>

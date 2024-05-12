@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "333953518321",
+    "project_id": "vehicle-manager-fd0f8",
+    "storage_bucket": "vehicle-manager-fd0f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333953518321:android:1c996b50b9db31b0047750",
+        "android_client_info": {
+          "package_name": "com.technoapps.vehiclemanager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyVQ_GpNVIowHaWMNUJYgQsWc1b3juN2Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
